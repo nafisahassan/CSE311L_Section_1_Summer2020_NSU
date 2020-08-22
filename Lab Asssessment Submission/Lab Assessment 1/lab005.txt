@@ -1,0 +1,31 @@
+Ans to the ques no:1
+SELECT Round (max(salary)) "Maximum", Round (sum(salary)) "sum", Round(avg(salary)) "average"
+from employees;
+
+
+Ans to the ques no:3
+SELECT job_id, COUNT(*)
+FROM employees
+GROUP BY job_id;
+SELECT job_id;
+Round(Max (salary)) "Maximum",
+Round(Min (salary)) "Minimum",
+Round(sum (salary)) "sum",
+Round(avg (salary)) "avg",
+from employees
+group by job_id;
+
+
+Ans to the ques no:4
+.SELECT manager_id, MIN(salary)
+FROM employees
+WHERE manager_id IS NOT NULL
+GROUP BY manager_id
+ORDER BY MIN(salary) DESC;
+
+Ans to the ques no:5
+SELECTd.department_name "Name",
+ d.location_id "Location",
+COUNT(*) "Number of People",
+ROUND(AVG(salary),2) "Salary"FROMemployees e,
+ departments dWHEREe.department_id = d.department_idGROUP BY d.department_name, d.location_id;
