@@ -1,0 +1,4 @@
+SELECT last_name, job_id, hire_date 
+FROM employees
+WHERE hire_date BETWEEN #20/02/1998# AND #01/05/1998#
+ORDER BY hire_date;
