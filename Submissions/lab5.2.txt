@@ -1,0 +1,3 @@
+SELECT last_name , salary, commission
+FROM employees
+ORDER BY salary, commission;
