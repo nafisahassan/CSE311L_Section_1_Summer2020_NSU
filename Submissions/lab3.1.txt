@@ -1,0 +1,2 @@
+SELECT last_name , weekly_salary  "Weekly Salary", department_number
+FROM employees;
